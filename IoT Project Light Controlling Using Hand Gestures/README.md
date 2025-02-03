@@ -3,7 +3,7 @@
 
 ## Step 1: Preparing data and environment
 Using [Google MediaPipe technology](https://ai.google.dev/edge/mediapipe/solutions/guide) for [hand gesture recognition](https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/hands.md).
-1. Set up the work environment
+1. Set up the work environment \
 1.1 Using Conda with Python 3.10
 - Create new environment with Python 3.10:
 ```bash
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 3. [Optional] Generate landmark data \
 Run this script to collect data:
 	```bash
-	python generate_landmark_data . py
+	python generate_landmark_data.py
 	```
 
 ## Step 2: Building and training a hand gesture classification model
