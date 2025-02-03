@@ -1,4 +1,4 @@
-# IoT Project Light Controlling Using Hand Guestures
+# [WIP] IoT Project Light Controlling Using Hand Guestures
 
 
 ## Step 1: Preparing data and environment
