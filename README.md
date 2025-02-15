@@ -1,4 +1,4 @@
-# Artificial Intelligence Projects
+# Artificial Intelligence Learning Projects
 
 # References
 1. Class AIO2025 at [AI VIET NAM](https://aivietnam.edu.vn/)
