@@ -15,27 +15,10 @@ car-review-analysis/
 ├── notebooks/
 │   └── car_review_analysis.ipynb # Notebook chính: chứa toàn bộ pipeline ML + LLM
 │
-├── src/
-│   ├── __init__.py
-│   ├── preprocessing.py          # Hàm clean text, tokenize, lemmatize
-│   ├── ml_sentiment.py           # Huấn luyện & đánh giá Logistic Regression
-│   ├── ml_topic.py               # LDA topic modeling
-│   ├── llm_sentiment.py          # Gọi LLM cho sentiment (zero-shot/few-shot)
-│   ├── llm_topic.py              # LLM topic extraction (direct hoặc clustering-based)
-│   └── utils.py                  # Helper: load data, save results, plot, v.v.
-│
-├── outputs/
-│   ├── ml_sentiment_results.csv
-│   ├── ml_topics.txt             # Top words per topic từ LDA
-│   ├── llm_sentiment_results.csv
-│   ├── llm_topics_summary.txt    # Chủ đề từ LLM
-│   └── figures/                  # Biểu đồ (confusion matrix, word cloud, v.v.)
-│       ├── sentiment_cm.png
-│       ├── lda_wordcloud.png
-│       └── topic_distribution.png
 │
 ├── reports/
 │   └── Car_Review_Analysis_Report.pptx  # Báo cáo 4–5 slides theo yêu cầu
+│	└── Report.docx  # Báo cáo words
 │
 ├── requirements.txt              # Danh sách thư viện cần cài
 ├── README.md                     # Hướng dẫn chạy project (1–2 phút)
@@ -43,15 +26,15 @@ car-review-analysis/
 ```
 
 ## How to Run
-    ```bash
+1. Create environment and install packages
+	```bash
     conda create -n car_review_analysis python=3.11
     conda activate car_review_analysis
-    pip install -r requirements.txt
+	pip install -r requirements.txt
     ```
-1. `pip install -r requirements.txt`
 2. Download spaCy model: `python -m spacy download en_core_web_sm`
-3. Set your OpenAI API key in environment (or use free LLM alternative)
+3. Get and set your OpenAI API key/Gemini key in environment (or use free LLM alternative or Local LLM instead)
 4. Open `notebooks/car_review_analysis.ipynb` and run all cells
 
 ## Output
-Results are saved in `outputs/`. Slides in `reports/`.
+Slides and summary in `reports/`.
